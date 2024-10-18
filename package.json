@@ -4,6 +4,7 @@
   "description": "##概要 以下Udemyの受講記録を管理するリポジトリ https://ibmcsr.udemy.com/course/ts-for-js-developers/",
   "main": "index.js",
   "scripts": {
+    "dev": "ts-node-dev --respawn",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,6 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.6.3"
   }
 }
