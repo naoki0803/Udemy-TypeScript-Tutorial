@@ -7,4 +7,5 @@ profile1 = { brithYear: 1976 };
 let profile2: {
     name: string;
 } = { name: 'Han' };
-profile2 = { birthYear: 1976 };
+// 型を{}で指定すると、その中のプロパティをアノテーション(形を指定)する事が出来る
+// profile2 = { birthYear: 1976 }; // stringではないのでエラーになる
