@@ -47,4 +47,5 @@ card.secretNumber = 1111111111;
 console.log(card.debugConsole());
 
 // 直接メンバー変数(実際はseetter)の値を変えようとすると、戻り値は'undefined'になる
+//実際setterにはreturnも記載していない。
 console.log(card.secretNumber);
