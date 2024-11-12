@@ -26,5 +26,5 @@ class Person {
     }
 */
 
-const me = new Person('Naoki', 38, 'japan');
+const me = new Person('Taro', 38, 'japan');
 console.log(me);
