@@ -1,6 +1,13 @@
 import axios from 'axios';
 export {};
 
+/** any型とは
+ *
+ * anyはTypeScriptにおける特別な型で、任意の型の値を持つことができることを示します。
+ * any型を使用すると、TypeScriptの型チェックを回避することができ、どんな型の値でも受け入れることができます。
+ * これにより、柔軟性が増しますが、型安全性が失われるため、使用には注意が必要です。
+ */
+
 // prettier-ignore
 let url: string = 'https://udemy-utils.herokuapp.com/api/v1/articles?token=token123';
 
