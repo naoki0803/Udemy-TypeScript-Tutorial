@@ -18,19 +18,19 @@ const example = {
     age: 43,
 };
 
-// objectのスキーマを型aliaseで指定する
+// objectのスキーマを型aliasで指定する
 type Profile = {
     name: string;
     age: number;
 };
 
-// 上記で作成したaliase(Profile)をアノテーションで使用
+// 上記で作成したalias(Profile)をアノテーションで使用
 const example2: Profile = {
     name: 'Han',
     age: 43,
 };
 
-// typeobを利用すると、exampleの型自体をaliaseとして登録出来る
+// typeofを利用すると、exampleの型自体をaliasとして登録出来る
 // typeofの記述は、代入した値の定義が変更されても、動的に型も変更される
 // かつ、記述ミスもなくなる
 type Profile2 = typeof example;
