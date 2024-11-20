@@ -31,7 +31,7 @@ let bmi: (weight: number, height: number) => number = (
 let oneLineBmi: (weight: number, height: number) => number = (
     weight: number,
     height: number
-): number => weight / (height * height); //アロー関数で1行で表現される場合、{}とreturを省略可能
+): number => weight / (height * height); //アロー関数で1行で表現される場合、{}とreturnを省略可能
 
 console.log('🚀🚀🚀🚀🚀 ~ bmi ~ bmi:', bmi(1.7, 56));
 console.log('🚀🚀🚀🚀🚀 ~ bmi ~ bmi:', oneLineBmi(1.7, 56));
