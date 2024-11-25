@@ -19,7 +19,7 @@ console.log(myVisaCard.owner);
 // myVisaCard.owner = 'Jiro';
 
 // 省略記法時のreadonlyの公文
-class AnoterVisaCard {
+class AnotherVisaCard {
     //public と readonlyは順不同かつ、readonly を記載している場合、publicは省略も可能
     //ただし、省略記法を知らない人に対して、可読性が下がる為省略はしないほうが良いかもしれない。
 
@@ -28,5 +28,5 @@ class AnoterVisaCard {
     constructor(readonly owner: string) {}
 }
 
-let anotherCard = new AnoterVisaCard('Jiro');
+let anotherCard = new AnotherVisaCard('Jiro');
 console.log(anotherCard.owner);
