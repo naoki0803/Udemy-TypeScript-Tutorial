@@ -28,7 +28,7 @@ class Lion extends Animal {
 
 // 抽象メソッドで定義されているcry()が実装されていないとエラーになり、実装忘れなどを防ぐ事ができる。
 class Tiger extends Animal {
-    cry() {
-        return 'grrr';
-    }
+    // cry() {
+    //     return 'grrr';
+    // }
 }
