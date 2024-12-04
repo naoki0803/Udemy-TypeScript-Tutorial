@@ -2,7 +2,11 @@ export {};
 
 /**. Exclude と Extract と Nun Nullableとは
  *
-g
+ */
+
+type DebugType = () => void;
+type SomeTypes = string | number | DebugType;
+
 /** ------------------------------------
  *              Exclude (除外)
 ---------------------------------------*/
@@ -46,6 +50,3 @@ type FunctionTypeExtractingFunction = Extract<SomeTypes, Function>;
 type NullableTypes = string | number | null | undefined;
 type NonNullableTypes = NonNullable<NullableTypes>;
 // type NonNullableTypes = string | number
-
-// これでも同じだけど、可読性や引数の指定を考えると、NonNullableを利用した方が良い。
-type ExcludeNullableTypes = Exclude<NullableTypes, null | undefined>;
