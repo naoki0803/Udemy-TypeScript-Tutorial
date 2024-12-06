@@ -1,7 +1,8 @@
 export {};
 
 /**. Exclude と Extract と Nun Nullableとは
- *
+ *  ユニオン型から特定の型を除外(Exclude) or 抽出(Extract)して新しい型を作成します
+ *  ユニオン型に対してのみ使用可能
  */
 
 type DebugType = () => void;
