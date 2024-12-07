@@ -15,7 +15,7 @@ export {};
 */
 
 class MyNumberCard {
-    private _owner: string; //geteerのownerと名前が重複するので、メンバ変数は_をつけて記述する。 ※アンダースコアを付与するのがTypescriptの慣習的な記述方法
+    private _owner: string; //getterのownerと名前が重複するので、メンバ変数は_をつけて記述する。 ※アンダースコアを付与するのがTypescriptの慣習的な記述方法
     private _secretNumber: number;
 
     constructor(owner: string, secretNumber: number) {
@@ -46,6 +46,6 @@ card.secretNumber = 1111111111;
 // 変更された値を確認する
 console.log(card.debugConsole());
 
-// 直接メンバー変数(実際はseetter)の値を変えようとすると、戻り値は'undefined'になる
+// 直接メンバー変数(実際はsetter)の値を変えようとすると、戻り値は'undefined'になる
 //実際setterにはreturnも記載していない。
 console.log(card.secretNumber);

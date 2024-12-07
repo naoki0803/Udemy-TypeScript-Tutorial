@@ -15,7 +15,7 @@ class Me {
 
 // static 修飾子を付与したメンバーへのアクセスは、インスタンス経由では出来ない。
 // let me = new Me();
-// console.log(me.isProgrammer); // isProbrammerの部分でコンパイルエラーになる error TS2576: Property 'isProgrammer' does not exist on type 'Me'. Did you mean to access the static member 'Me.isProgrammer' instead?
+// console.log(me.isProgrammer); // isProgrammer error TS2576: Property 'isProgrammer' does not exist on type 'Me'. Did you mean to access the static member 'Me.isProgrammer' instead?
 
 // classに直接接続する事で、メンバー変数にアクセスする事ができる。
 console.log(Me.isProgrammer);
